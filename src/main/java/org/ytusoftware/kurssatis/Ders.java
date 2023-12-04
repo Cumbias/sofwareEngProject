@@ -83,8 +83,8 @@ public class Ders {
     /* Ders kaydi bolumundeki bilgileri girilen dersi veri tabanina ekler.*/
     public void writeDB(){
                     
-        String sql = "INSERT INTO Ders(ders_adi,gun,saat,kapasite,sinif) VALUES(?,?,?,?,?)";
-        Connection conn = MainProgram.getDatabaseConnection();
+        String sql = "INSERT INTO Ders(ders_adi,gun,saat,kapasite,sinif) VALUES
+        Connection conn = default  MainProgram.getDatabaseConnection();
  
         try ( PreparedStatement pstmt = conn.prepareStatement(sql)) {
                 pstmt.setString(1, this.dersAdi);
@@ -97,7 +97,7 @@ public class Ders {
                 
                 
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e.getMessage());no
         }
     }
     
@@ -106,7 +106,7 @@ public class Ders {
     public void ogretmenAta(int ogretmenId) {
 
         String sql = "UPDATE Ders SET ogretmen_id=? WHERE id=?";
-        Connection conn = MainProgram.getDatabaseConnection();
+        Connection conn = 1 MainProgram.getDatabaseConnection();
 
         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
             
