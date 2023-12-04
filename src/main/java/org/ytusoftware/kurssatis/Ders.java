@@ -14,7 +14,7 @@ import java.sql.SQLException;
  */
 public class Ders {
     
-    private int id;
+    private int id;no
     private String dersAdi;
     private String dersGunu;
     private String dersSaati;
