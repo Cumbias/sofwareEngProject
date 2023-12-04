@@ -1,7 +1,7 @@
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * open the template in the editor.
  */
 package org.ytusoftware.kurssatis;
 
@@ -53,20 +53,20 @@ public class MainProgram extends javax.swing.JPanel {
     
     //Bu uye alanlari tablo ve liste modelleri icin kullanilmistir
     public DefaultListModel<String> dl = new DefaultListModel<>();
-    public DefaultTableModel table_model = new DefaultTableModel(new Object[] {"Ders Adı", "Bedel"},0);
+    public DefaultTableModel table_model = new DefaultTableModel(new Object[] {"Ders", "Bedel"},0);
     public DefaultTableModel tm_eklenebilecek_dersler = new DefaultTableModel(new Object[] {"Ders Id", "Ders Adı","Ders Günü","Ders Saati", "Kapasite"},0);
     public DefaultTableModel tm_eklenen_dersler = new DefaultTableModel(new Object[] {"Ders Id", "Ders Adı","Ders Günü","Ders Saati", "Kapasite"},0);
     public DefaultTableModel tm_ogretmen_atama = new DefaultTableModel(new Object[] {"Ders Adı","Ders Saati","Ders Kapasitesi","Öğretmen Id","Öğretmen Adı","Öğretmen Soyadı", "Bedel (TL)"},0);
     public DefaultListModel<String> lm_yer_alacak_dersler = new DefaultListModel<>();
     public DefaultTableModel tm_secilebilecek_kurslar = new DefaultTableModel(new Object[] {"Kurs Adı","Kurs Tipi","Tarih","Kapasite","Doluluk","Ücret (TL)"},0);
-    public DefaultTableModel tm_icerdigi_dersler = new DefaultTableModel(new Object[] {"Ders Id", "Ders Adı","Ders Günü","Ders Saati","Ders Sınıfı"},0);
+    public DefaultTableModel tm_icerdigi_dersler = new DefaultTableModel(new Object[] {"Ders Id", "Ders","Ders Günü","Ders Saati","Ders Sınıfı"},0);
     public DefaultTableModel tm_kayitli_kursiyerler = new DefaultTableModel(new Object[] {"Id","Ad", "Soyad", "Email" },0);
     public DefaultTableModel tm_kursiyer_bilgileri = new DefaultTableModel(new Object[] {"Id","Ad", "Soyad", "Ev Tel","Cep Tel","Adres", "Email"},0);
     public DefaultTableModel tm_katildigi_kurslar = new DefaultTableModel(new Object[] {"Kurs Adı", "Ödenen Miktar", "Satın Alım Tarihi", "Ödeme Tipi"},0);
     public DefaultTableModel tm_ogretmen_bilgileri = new DefaultTableModel(new Object[] {"Id","Ad", "Soyad", "Ev Tel","Cep Tel","Adres", "Email"},0);
     public DefaultListModel<String> lm_calisabildigi_saatler = new DefaultListModel<>();
     public DefaultTableModel tm_verebildigi_dersler = new DefaultTableModel(new Object[] {"Ders Adı","Bedel"},0);
-    public DefaultTableModel tm_kurs_bilgileri = new DefaultTableModel(new Object[] {"Kurs Adı","Kurs Tipi","Tarih","Kapasite","Doluluk","Ücret (TL)"},0);
+    public DefaultTableModel tm_kurs_bilgileri = new DefaultTableModel(new Object[] {"Kurs Adı","Kurs Tipi","Tarih","Kapasite","Doluluk"," (TL)"},0);
     
     
     
@@ -167,7 +167,7 @@ public class MainProgram extends javax.swing.JPanel {
             System.out.println(e.getMessage());
         }
         
-        return dersAdlari;
+        
     }
     
     
